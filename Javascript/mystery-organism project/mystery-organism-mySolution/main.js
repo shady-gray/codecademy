@@ -98,16 +98,16 @@ do {
 
 
 
-/*
-let spec1Arr = mockUpStrand();
-//let spec2Arr = mockUpStrand()
-let specimen1 = pAequorFactory(1, spec1Arr);
-//let specimen2 = pAequorFactory(2, spec2Arr);
-//specimen1.compareDNA(specimen2.dna);
-console.log(specimen1);
-console.log(specimen1.willLikelySurvive())
 
-*/
+let spec1Arr = mockUpStrand();
+let spec2Arr = mockUpStrand()
+let specimen1 = pAequorFactory(1, spec1Arr);
+let specimen2 = pAequorFactory(2, spec2Arr);
+specimen1.compareDNA(specimen2);
+//console.log(specimen1);
+//console.log(specimen1.willLikelySurvive())
+
+
 
 
 
