@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Form a Story</title>
+  </head>
+  <body>
+    <section id="top">
+      <img src="./formAStoryLogo.svg" alt="Form A Story Logo">
+    </section>
+
+    <section id="main">
+      <h1>Complete the Form -<br> Complete the Story!</h1>
+      <hr>
+      <!--Add your form below:-->
+      <form action="./story" method="get">
+        <label for="animal-1">Animal:</label>
+        <input type="text" id="animal-1" name="animal-1" placeholder="Type 1st animal name here" required>
+        <br>
+        <label for="animal-2">Another Animal:</label>
+        <input type="text" id="animal-2" name="animal-2" placeholder="Type 2nd animal name here" required>
+        <br>
+        <label for="animal-3">One More Animal:</label>
+        <input type="text" id="animal-3" name="animal-3" placeholder="Type 3rd animal name here" required>
+        <br>
+        <label for="adj-1">Adjective (ends in -ed):</label>
+        <input type="text" id="adj-1" name="adj-1" placeholder="" required>
+        <br>
+        <label  for="verb-1">Verb (ends in -ing):</label>
+        <input type="text" id="verb-1" name="verb-1" required>
+        <br>
+        <label for="num-1">Number:</label>
+        <input type="number" id="num-1" name="num-1" required>
+        <br>
+        <span>Yes or No:</span>
+        <input type="radio" id="yes" name="answer" value="yes" required>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="answer" value="no">
+        <label for="no">No</label>
+        <br>
+        <label for="speed">Relative speed (ends in -er):</label>
+        <select id="speed" name="speed" required>
+          <option value="slower">Slower</option>
+          <option value="faster">Faster</option>
+        </select>
+        <br>
+        <label for="quote">Motivational Quote:</label>
+        <input text="text" list="quote-choices" id="quote" name="quote" required list="quote-choices">
+        <datalist id="quote-choices">
+          <option value="do a bear sh*t in the woods and wipe it ass with a fluffy white Rabbit">
+          <option value="curios monkey gets a bullet in the head">
+          <option value="winner gets ice cream!">
+        </datalist>
+        <br>
+        <label for="message">Meaningful Message:</label>
+        <textarea id="some-od" name="a-name" rows="100" cols="100"></textarea>
+        <br>
+        <input type="submit" value="Form My Story">
+
+      </form>
+    </section>
+  </body>
+</html>
